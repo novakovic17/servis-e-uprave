@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Opstina;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -17,9 +18,18 @@ class UserFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
+            'birthdate'=>$this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'opstina_id'=> random_int(1,Opstina::count()),
+            'jmbg'=>$this->faker->numerify("#############"),
+            'br_lk'=>$this->faker->numerify("#########"),
+            'adresa_prebivalista'=>$this->faker->address(),
+            'drzavljanstvo'=>"SRPSKO",
+            'drzava_rodjenja'=>$this->faker->country(), 
+            'phone'=>$this->faker->phoneNumber(),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
+            'admin'=>false
         ];
     }
 
