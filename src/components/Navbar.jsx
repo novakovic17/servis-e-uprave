@@ -66,7 +66,12 @@ function NavBar({token}) {
                 :  
                     <>
                     <Link to="/zakazi"  className="navbar-items" >Zakazi </Link>
+                    <Link to="/vrtici"  className="navbar-items" >Vrtici </Link>
+
                     <Link to="/skole"  className="navbar-items" >Skole </Link>
+                    <Link to="/fakulteti"  className="navbar-items" >Fakulteti </Link>
+
+
                     <Link to="/skole/omiljene"  className="navbar-items" >Moje omiljene skole </Link>
 
                    

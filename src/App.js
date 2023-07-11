@@ -18,6 +18,8 @@ import Izmeni from './components/Izmeni';
 import OmiljeneSkole from './components/OmiljeneSkole';
 import Skole from './components/Skole';
 import Zakazi from './components/Zakazi';
+import Vrtici from './components/Vrtici';
+import Fakulteti from './components/Fakulteti';
 
  
 const axiosInstance = axios.create({
@@ -161,10 +163,6 @@ function addSkola( id) {
 }
   
 function removeSKola( id) {
-   
- 
-   
- 
   skole.forEach((p) => {
       if (p.id == id) {
          p.omiljena=0;
@@ -224,6 +222,8 @@ function postaviIDZaIzmenu(id){
        <Route   path="/login"  element={<LoginPage addToken={addToken} />}/>
        <Route   path="/register"  element={<RegisterPage  />}/>
        <Route   path="/logout"  element={<LoginPage  />}/> 
+       <Route   path="/vrtici"  element={<Vrtici  />}/> 
+       <Route   path="/fakulteti"  element={<Fakulteti  />}/> 
        <Route path="/kontakt" element={ <Kontakt></Kontakt>}></Route>
        <Route path="/zakazi" element={ <Zakazi ambulante={ambulante} vakcine={vakcine}></Zakazi>}></Route>
 
