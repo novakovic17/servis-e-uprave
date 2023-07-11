@@ -30,9 +30,7 @@ function Footer() {
       <div className="footerItem">
         <ul>
           <strong>© 2023 Sva prava zadržana</strong>
-          <li>Razvijeno od strane: OpenAI</li>
-          <li>Adresa</li>
-          <li>Grad, Država</li>
+        
         </ul>
       </div>
     </div>
