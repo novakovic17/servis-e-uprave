@@ -7,7 +7,7 @@ import NavBar from './components/Navbar';
 import Slideshow from './components/WelcomePage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
-import Kontakt from './components/Kontaks';
+import Kontakt from './components/Kontakt';
 import Footer from './components/Footer';
 
 import NotFound from './components/NotFound';

@@ -1,12 +1,12 @@
 
  .pocetnaStr{
-  background-color: #14265c;
+  background-color: #5c75c1;
  }
 /*za navbar*/
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: #14265c;
+  background-color: #5c75c1;
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: rgb(175, 175, 175);
@@ -270,7 +270,7 @@ tr:nth-child(even) {
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
+  
 }
 .card-header img {
   width: 100%;

@@ -1,37 +1,42 @@
-import React    from 'react';
-import {BsFillEnvelopeFill } from "react-icons/bs";
-import {Link} from "react-router-dom";
+import React from 'react';
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
  
-function Footer( ) {
-    return (
-        <div className="footer">
-        <div className="footerItem">
-            <ul>
-               <strong>Kontaktirajte nas</strong>  
-                <li>+381 11 123 456</li>
-                <li>zaposleni@gmail.com</li>
-                <li className="footerlink"><BsFillEnvelopeFill/><Link to="/kontakt" className="footerlink"> Pišite nam... </Link></li>
-            </ul>
-        </div>
-        <div className="footerItem">
-            <ul>
-               <strong>Možete nas pronaći na sledecim lokacijama</strong>  
-                <li>Bulevar Mihajla Pupina 74a, Novi Beograd</li>
-                <li>Cara Dušana 92, Zemun</li>
-                <li>Vojvode Knićanina 12/b, Novi Sad</li>
 
-            </ul>
-        </div>
-        <div className="footerItem">
-            <ul>
-                <strong>Developed by:</strong> 
-              
-               
-                <li> <a href=" " target="_blank"> </a></li> 
-            </ul>
-        </div>  
-      
+function Footer() {
+  return (
+    <div className="footer">
+      <div className="footerItem">
+        <ul>
+          <strong>Kontakt</strong>
+          <li>+1 234 567 890</li>
+          <li>info@example.com</li>
+          <li className="footerLink">
+            <BsFillEnvelopeFill />
+            <Link to="/kontakt" className="footerLinkText">
+              Pošaljite nam poruku
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="footerItem">
+        <ul>
+          <strong>Lokacija</strong>
+          <li>123 Main Street, Grad</li>
+          <li>456 Park Avenue, Grad</li>
+          <li>789 Elm Road, Grad</li>
+        </ul>
+      </div>
+      <div className="footerItem">
+        <ul>
+          <strong>© 2023 Sva prava zadržana</strong>
+          <li>Razvijeno od strane: OpenAI</li>
+          <li>Adresa</li>
+          <li>Grad, Država</li>
+        </ul>
+      </div>
     </div>
-      );
+  );
 }
+
 export default Footer;
