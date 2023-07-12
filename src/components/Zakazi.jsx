@@ -63,7 +63,7 @@ function Zakazi({ambulante,vakcine}) {
                                 <h2 className="title">Zakazi termin</h2>
                                 <form onSubmit={handleZakazi}>
                                     <div className="input-group">
-                                        <input className="input--style-3" type="text" placeholder="Name" name="name" defaultValue={ window.sessionStorage.getItem("auth_id")}/>
+                                        <input className="input--style-3" type="text" placeholder="Name" name="name" defaultValue={ window.sessionStorage.getItem("auth_id")} readOnly/>
                                     </div>
                                     <div className="input-group">
                                         <input className="input--style-3 js-datepicker" type="text" placeholder="Datum" name="datum"required onInput={handleInput}/>

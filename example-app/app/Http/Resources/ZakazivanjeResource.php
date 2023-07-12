@@ -8,7 +8,7 @@ use App\Models\Vakcina;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ZakazivanjeResource extends JsonResource
-{
+{ 
     /**
      * Transform the resource into an array.
      *
